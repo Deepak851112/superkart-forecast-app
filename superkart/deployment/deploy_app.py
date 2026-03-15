@@ -1,4 +1,3 @@
-
 import os
 import shutil
 import pandas as pd
@@ -128,8 +127,8 @@ ENV HOME=/home/user     PATH=/home/user/.local/bin:$PATH
 WORKDIR $HOME/app
 COPY --chown=user . $HOME/app
 
-# Launch Streamlit app on port 8501
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.enableXsrfProtection=false"]
+# Launch Streamlit app on port 8507
+CMD ["streamlit", "run", "app.py", "--server.port=8507", "--server.address=0.0.0.0", "--server.enableXsrfProtection=false"]
 """
 with open(dockerfile_path, "w") as f:
     f.write(dockerfile_content)
