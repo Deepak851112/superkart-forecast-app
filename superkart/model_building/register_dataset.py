@@ -23,7 +23,7 @@ login(hf_token)
 repo_id = f"{hf_username}/{dataset_name}"
 
 # Location of the CSV dataset stored locally
-csv_file_path = "superkart/data/tourism.csv"
+csv_file_path = "superkart/data/SuperKart.csv"
 
 # Initialize API interface for interacting with Hugging Face Hub
 api = HfApi()
